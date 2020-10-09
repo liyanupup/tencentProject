@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英雄联盟道聚城</title>
+  <link rel="stylesheet" href="css/commodity.min.css">
+  <script src="js/require.js" async="true" defer data-main="js/main"></script>
+  <script src="./js/startMove.js"></script>
+  <script src="./js/jquery-1.11.3.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <script src="./js/commodity.js"></script>
+</head>
+<body>
+  <!-- head -->
+  <header>
+    <section class="center">
+      <ul class="headerUl1" id="fixButton">
+        <li><a href="">手机版</a></li>
+        <li><a href="">Q币充值</a></li>
+      </ul>
+      <ul class="headerUl2">
+        <li><a href="./login.html">您还未登录，请登录</a></li>
+        <li><a href="">我的订单</a></li>
+        <li><a href="">个人中心</a></li>
+        <li><a href="">帮助中心</a></li>
+        <li><a href="" id="a1">游戏导航</a></li>
+      </ul>
+      <div id="list">
+        <table width="700px" height="300px" border="1px" cellspacing="0" bordercolor="#e7e8e7">
+          <tr class="tr1">
+            <td colspan="3">角色扮演<span>(18)</span></td>
+            
+            <td colspan="2">竞技游戏<span>(11)</span></td>
+            <td>休闲游戏<span>(3)</span></td>
+            <td>网页游戏<span>(6)</span></td>
+          </tr>
+          <tr>
+            <td>上古世纪</td>
+            <td>天堂2</td>
+            <td>刀剑2</td>
+            <td>NBA2KOL2</td>
+            <td>枪神纪</td>
+            <td>炫舞时代</td>
+            <td>捕鱼达人3D</td>
+          </tr>
+          <tr>
+            <td>冒险岛2</td>
+            <td>仙侠传</td>
+            <td>剑灵</td>
+            <td>极品飞车OL</td>
+            <td>逆战</td>
+            <td>飞车</td>
+            <td>英魂之刃</td>
+          </tr>
+          <tr>
+            <td>御龙在天经典版</td>
+            <td>自由幻想</td>
+            <td>御龙在天</td>
+            <td>战争雷霆</td>
+            <td>FIFA OL3</td>
+            <td>炫舞</td>
+            <td>火影忍者On..</td>
+          </tr>
+          <tr>
+            <td>QQ幻想</td>
+            <td>天堂</td>
+            <td>天涯明月刀</td>
+            <td>NBA2KOL</td>
+            <td>FIFA OL4</td>
+            <td></td>
+            <td>部落守卫战</td>
+          </tr>
+          <tr>
+            <td>斗战神</td>
+            <td>幻想世界</td>
+            <td></td>
+            <td>CODOL使命...</td>
+            <td></td>
+            <td></td>
+            <td>宠物大乐斗</td>
+          </tr>
+          <tr>
+            <td>地下城与勇士</td>
+            <td>QQ三国</td>
+            <td></td>
+            <td>英雄联盟</td>
+            <td></td>
+            <td></td>
+            <td>烽火战国</td>
+          </tr>
+          <tr>
+            <td>轩辕</td>
+            <td>疾风之刃</td>
+            <td></td>
+            <td>穿越火线</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </header>
+
+
+  <!-- search -->
+  <section class="searchAll">
+    <section class="search center">
+      <img src="./images/commodity/search01.png" alt="">
+      <div>
+        <input type="text" placeholder="输入道具进行搜索">
+        <a href=""></a>
+      </div>
+      <img src="./images/commodity/search03.png" alt="">
+    </section>
+  </section>
+
+
+  <!-- nav1 -->
+  <nav class="nav1All">
+    <section class="nav1 center">
+      <ul>
+        <li><a href="">首页</a></li>
+        <li><a href="">商品列表</a></li>
+        <li><a href="">活动列表</a></li>
+        <li><a href="">限时折扣</a></li>
+        <li><a href="">聚豆乐园</a></li>
+        <li><a href="">周边商城</a></li>
+        <li><a href="">个人中心</a></li>
+      </ul>
+      <a href="" class="nav1A">
+        <section>
+          <span>(</span>
+          <span class="shopListNum">0</span>
+          <span>)</span>
+        </section>
+      </a>
+    </section>
+  </nav>
+
+
+  <!-- nav2 -->
+  <section class="nav2All">
+    <nav class="nav2 center">
+      <ul>
+        <li><a href="">全部分类</a></li>
+        <li><a href="">英雄</a></li>
+        <li><a href="">表情</a></li>
+        <li><a href="">海克斯及其他</a></li>
+        <li><a href="">云顶之弈</a></li>
+        <li><a href="">皮肤</a></li>
+        <li><a href="">道具</a></li>
+        <li><a href="">守卫眼皮肤</a></li>
+        <li><a href="">道具包</a></li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <!-- main -->
+  <main>
+    <!-- content1 -->
+    <section class="content1 center">
+      <a href="">您现在的位置：英雄联盟 > 全部商品 > 道具详情</a>
+    </section>
+
+    <!-- content2 -->
+    <section class="content2All center">
+      <div class="content2Div1">
+        <section>
+          <div>看了该商品的用户还看了</div>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000001.jpg" alt="">
+            <section>
+              <p>Gen.G表情</p>
+              <span>QB价：20.00 Q币</span>
+              <p>微信价：￥19.40</p>
+            </section>
+          </a>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000002.jpg" alt="">
+            <section>
+              <p>Machi Esports...</p>
+              <span>QB价：20.00 Q币</span>
+              <p>微信价：￥19.40</p>
+            </section>
+          </a>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000003.jpg" alt="">
+            <section>
+              <p>Unicorns Of Lov...</p>
+              <span>QB价：11.50 Q币</span>
+              <p>微信价：￥11.15</p>
+            </section>
+          </a>
+        </section>
+        <section>
+          <div>猜你喜欢</div>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000001.jpg" alt="">
+            <section>
+              <p>DRX 表情</p>
+              <span>QB价：20.00 Q币</span>
+              <p>微信价：￥19.40</p>
+            </section>
+          </a>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000002.jpg" alt="">
+            <section>
+              <p>PSG.Talon Espo...</p>
+              <span>QB价：20.00 Q币</span>
+              <p>微信价：￥19.40</p>
+            </section>
+          </a>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000003.jpg" alt="">
+            <section>
+              <p>INTZ 图标</p>
+              <span>QB价：11.50 Q币</span>
+              <p>微信价：￥11.15</p>
+            </section>
+          </a>
+        </section>
+        <section>
+          <div>周边商城</div>
+          <a href="">
+            <img src="./images/commodity/ia_100000007.jpg" alt="">
+            <p>True Damage演唱会T恤</p>
+            <span>￥259.00</span>
+          </a>
+          <a href="">
+            <img src="./images/commodity/ia_100000008.jpg" alt="">
+            <p>海洋之灾 普朗克 手办</p>
+            <span>￥150.00</span>
+          </a>
+          <a href="">
+            <img src="./images/commodity/ia_100000009.jpg" alt="">
+            <p>雷克顿口袋T恤</p>
+            <span>￥168.00</span>
+          </a>
+        </section>
+        <section>
+          <div>最近浏览过的商品</div>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000001.jpg" alt="">
+            <section>
+              <p>灵能特工 莎弥拉...</p>
+              <span>QB价：119.2 Q币</span>
+              <p>微信价：￥115.62</p>
+            </section>
+          </a>
+          <a href="" class="content2Div1A">
+            <img src="./images/commodity/ia_100000001.jpg" alt="">
+            <section>
+              <p>沙漠玫瑰 莎弥拉</p>
+              <span>QB价：45 Q币</span>
+              <p>微信价：￥43.65</p>
+            </section>
+          </a>
+          <aside>清空历史记录</aside>
+        </section>
+      </div>
+
+
+      <div class="content2Div2">
+        <section class="content2Div2Ajax">
+          <!-- <div id="small">
+            <img src="../images/commodity/ia_100000013.jpg" alt="">
+            <div id="mask"></div>
+          </div>
+          <div id="big">
+            <img src="../images/commodity/ia_100000013.jpg" alt="">
+          </div>
+          <div class="msg">
+            <p>沙漠玫瑰 莎弥拉</p>
+            <section>
+              <div>
+                <span>Q币价：</span>
+                <span>45</span>
+                <span>Q币</span>
+              </div>
+              <div>
+                <span>微信价：</span>
+                <span>￥</span>
+                <span>43.65</span>
+              </div>
+              <div></div>
+            </section>
+            <aside>期限：永久</aside>
+            <div class="content2Div2Btn">
+              <button class="content2Div2Btn1">加入购物车</button>
+              <button class="content2Div2Btn2">赠送</button>
+            </div>
+          </div> -->
+        </section>
+        <section>
+          <p>召唤师的皮肤</p>
+          <div>
+            <a href="" class="imga"><img src="./images/commodity/ia_100000014.jpg" alt=""></a>
+            <section>
+              <aside>灵能特工 莎弥拉</aside>
+              <article>微信价：<span>￥76.36</span></article>
+              <article>Q币价：<span>79QB</span></article>
+              <a href="" class="content2Div2A">立即购买</a>
+            </section>
+          </div>
+        </section>
+        <section>
+          <p>商品详情</p>
+          <span>沙漠玫瑰 莎弥拉</span>
+        </section>
+        <section class="shopList">
+          <article>购物车信息</article>
+          <div class="shopListDiv1">
+            <section>
+              <span><input class="inputAll" type="checkbox"> 全选</span>
+              <span>商品名称</span>
+              <span>类型</span>
+              <span>单价</span>
+              <span>期限</span>
+              <span>数量</span>
+              <span>小计</span>
+              <span>操作</span>
+            </section>
+            <div class="ajaxDiv">
+              <!-- <ul>
+                <li>
+                  <i></i>
+                </li>
+                <li>
+                  <img src="../images/commodity/ia_100000011.jpg" alt="">
+                  灵能特工 维克托
+                </li>
+                <li>皮肤</li>
+                <li>
+                  <span>70.00</span>
+                  <span>Q币</span>
+                </li>
+                <li>永久</li>
+                <li>
+                  <a href="">-</a>
+                  <a href="">+</a>
+                  <input type="text" value="1">
+                </li>
+                <li>
+                  <span>70.00</span>
+                  <span>Q币</span>
+                </li>
+                <li>
+                  <a href="" class="delete">删除</a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </section>
+      </div>
+      
+    </section>
+
+
+
+
+    
+  </main>
+</body>
+</html>

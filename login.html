@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+  <link rel="stylesheet" href="css/login.min.css">
+  <script src="js/require.js" async="true" defer data-main="js/main"></script>
+  <script src="./js/startMove.js"></script>
+  <script src="./js/jquery-1.11.3.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <!-- <script src="./js/login.js"></script> -->
+</head>
+<body>
+  <!-- left -->
+  <section class="left">
+    <a href=""></a>
+    <p></p>
+    <img class="img1" src="https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/advert01.png" alt="">
+    <img class="img2" src="https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/advert02.png" alt="">
+    <img class="img3" src="https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/advert03.png" alt="">
+  </section>
+
+  <!-- right -->
+  <section class="right">
+    <header>
+      <ul>
+        <li><a href="">意见反馈</a></li>
+        <li><a href="">简体中文</a></li>
+        <li></li>
+      </ul>
+    </header>
+    <main>
+      <section>欢迎登录账号</section>
+      <section>
+        <span>每一天，乐在沟通。</span>
+        <a href="">免费靓号</a>
+      </section>
+      <section class="inputAll">
+        <input type="text" placeholder="昵称">
+        <input type="text" placeholder="密码">
+        <!-- <input type="text" placeholder="确认密码"> -->
+        <p class="alert">我啊</p>
+      </section>
+      <section>
+        <input id="btn1" type="submit" value="立即登录">
+        <img src="" alt="">
+        <a href="./register.html">还没有账号，马上注册</a>
+      </section>
+    </main>
+
+    <p class="bottom">Copyright &copy; 1998-2020Tencent All Rights Reserved</p>
+  </section>
+</body>
+<script type="module">
+  import ajax from "./js/ajax.js";
+  var oBtn = document.getElementById("btn1");
+  var aInput = document.querySelectorAll(".inputAll input");
+  var oAlert = document.querySelector(".alert")
+  oBtn.onclick = function(){
+    ajax({
+      type: 'post',
+      url: 'login.php',
+      data: {
+        username: aInput[0].value,
+        password: aInput[1].value,
+      },
+      success: function(msg){
+        // console.log(msg);
+        var obj = JSON.parse(msg);
+        // console.log(obj);
+        if(obj.code){
+          oAlert.style.display = 'block';
+          oAlert.style.backgroundColor = '#FC9D99';
+          oAlert.style.color = 'white';
+          
+          
+        }else{
+          oAlert.style.display = 'block';
+          oAlert.style.backgroundColor = '#AEDD81';
+          oAlert.style.color = 'white';
+          alert("登录成功啦！！！");
+          self.location = "index.html";
+        }
+        oAlert.innerHTML = obj.msg;
+
+      },
+      error: function(msg){
+        console.log(msg);
+      }
+    })
+  }
+</script>
+</html>

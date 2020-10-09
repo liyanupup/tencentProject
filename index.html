@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>腾讯道聚城-集道具聚欢乐</title>
+  <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="./css/iconfont1.min.css">
+  <script src="js/require.js" async="true" defer data-main="js/main"></script>
+  <script src="./js/startMove.js"></script>
+  <script src="./js/jquery-1.11.3.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <!-- head -->
+  <header>
+    <section class="center">
+      <ul class="headerUl1" id="fixButton">
+        <li><a href="">手机版</a></li>
+        <li><a href="">Q币充值</a></li>
+      </ul>
+      <ul class="headerUl2">
+        <li><a href="./login.html">您还未登录，请登录</a></li>
+        <li><a href="">我的订单</a></li>
+        <li><a href="">个人中心</a></li>
+        <li><a href="">帮助中心</a></li>
+        <li><a href="" id="a1">游戏导航</a></li>
+      </ul>
+      <div id="list">
+        <table width="700px" height="300px" border="1px" cellspacing="0" bordercolor="#e7e8e7">
+          <tr class="tr1">
+            <td colspan="3">角色扮演<span>(18)</span></td>
+            
+            <td colspan="2">竞技游戏<span>(11)</span></td>
+            <td>休闲游戏<span>(3)</span></td>
+            <td>网页游戏<span>(6)</span></td>
+          </tr>
+          <tr>
+            <td>上古世纪</td>
+            <td>天堂2</td>
+            <td>刀剑2</td>
+            <td>NBA2KOL2</td>
+            <td>枪神纪</td>
+            <td>炫舞时代</td>
+            <td>捕鱼达人3D</td>
+          </tr>
+          <tr>
+            <td>冒险岛2</td>
+            <td>仙侠传</td>
+            <td>剑灵</td>
+            <td>极品飞车OL</td>
+            <td>逆战</td>
+            <td>飞车</td>
+            <td>英魂之刃</td>
+          </tr>
+          <tr>
+            <td>御龙在天经典版</td>
+            <td>自由幻想</td>
+            <td>御龙在天</td>
+            <td>战争雷霆</td>
+            <td>FIFA OL3</td>
+            <td>炫舞</td>
+            <td>火影忍者On..</td>
+          </tr>
+          <tr>
+            <td>QQ幻想</td>
+            <td>天堂</td>
+            <td>天涯明月刀</td>
+            <td>NBA2KOL</td>
+            <td>FIFA OL4</td>
+            <td></td>
+            <td>部落守卫战</td>
+          </tr>
+          <tr>
+            <td>斗战神</td>
+            <td>幻想世界</td>
+            <td></td>
+            <td>CODOL使命...</td>
+            <td></td>
+            <td></td>
+            <td>宠物大乐斗</td>
+          </tr>
+          <tr>
+            <td>地下城与勇士</td>
+            <td>QQ三国</td>
+            <td></td>
+            <td>英雄联盟</td>
+            <td></td>
+            <td></td>
+            <td>烽火战国</td>
+          </tr>
+          <tr>
+            <td>轩辕</td>
+            <td>疾风之刃</td>
+            <td></td>
+            <td>穿越火线</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </header>
+
+  <!-- search -->
+  <section class="search center">
+    <img src="./images/index/search01.png" alt="">
+    <div>
+      <a href="#" class="searchA1">选择游戏</a>
+      <input type="text" placeholder="请选择游戏搜索道具">
+      <button></button>
+    </div>
+    <img src="./images/index/search02.png" alt="">
+    <section class="searchSection">
+      <article>
+        <span>角色扮演：</span>
+        <ul>
+          <li><a href="">上古世纪</a></li>
+          <li><a href="">冒险岛2</a></li>
+          <li><a href="">御龙在天经典版</a></li>
+          <li><a href="">QQ幻想</a></li>
+          <li><a href="">斗战神</a></li>
+          <li><a href="">地下城与勇士</a></li>
+          <li><a href="">轩辕</a></li>
+          <li><a href="">天堂2</a></li>
+          <li><a href="">仙侠传</a></li>
+          <li><a href="">自由幻想</a></li>
+          <li><a href="">天堂</a></li>
+          <li><a href="">幻想世界</a></li>
+          <li><a href="">QQ三国</a></li>
+          <li><a href="">疾风之刃</a></li>
+          <li><a href="">刀剑2</a></li>
+          <li><a href="">剑灵</a></li>
+          <li><a href="">御龙在天</a></li>
+          <li><a href="">天涯明月刀</a></li>
+        </ul>
+      </article>
+      <article>
+        <span>竞技游戏：</span>
+        <ul>
+          <li><a href="">NBA2KOL2</a></li>
+          <li><a href="">极品飞车OL</a></li>
+          <li><a href="">战争雷霆</a></li>
+          <li><a href="">NBA2KOL</a></li>
+          <li><a href="">CODOL使命召唤Online</a></li>
+          <li><a href="">英雄联盟</a></li>
+          <li><a href="">穿越火线</a></li>
+          <li><a href="">枪神纪</a></li>
+          <li><a href="">逆战</a></li>
+          <li><a href="">FIFA OL3</a></li>
+          <li><a href="">FIFA OL4</a></li>
+        </ul>
+      </article>
+      <article>
+        <span>竞技游戏：</span>
+        <ul>
+          <li><a href="">炫舞时代</a></li>
+          <li><a href="">飞车</a></li>
+          <li><a href="">炫舞</a></li>
+        </ul>
+      </article>
+      <article>
+        <span>网页游戏：</span>
+        <ul>
+          <li><a href="">捕鱼达人3D</a></li>
+          <li><a href="">英魂之刃</a></li>
+          <li><a href="">火影忍者Online</a></li>
+          <li><a href="">部落守卫战(网页版)</a></li>
+          <li><a href="">宠物大乐斗</a></li>
+          <li><a href="">烽火战国</a></li> 
+        </ul>
+      </article>
+    </section>
+  </section>
+
+
+  <!-- nav -->
+  <nav class="nav">
+    <section class="center">
+      <ul class="navUl1">
+        <li><a href="">所有游戏分类</a></li>
+        <li><a href="" class="navli1">首页</a></li>
+        <li><a href="" class="navli1 navli2">活动中心</a></li>
+        <li><a href="" class="navli1">聚诚品</a></li>
+        <li><a href="" class="navli1">手游中心</a></li>
+        <li><a href="" class="navli1">聚豆商城</a></li>
+        <li><a href="" class="navli1">个人中心</a></li>
+      </ul>
+      <a href="" class="navA1">
+        <aside>购物车</aside>
+        <span>0</span>
+      </a>
+      <div class="navDiv2">
+        <p>游戏</p>
+        <p>道具名</p>
+        <p>单价</p>
+        <p>数量</p>
+        <aside>对不起，您还未登录，请登录后再试！</aside>
+      </div>
+      <div class="navDiv">
+        <a href="">闪购专区</a>
+        <a href="">淘宝贝</a>
+      </div>
+    </section>
+    
+    
+  </nav>
+
+
+  <!-- content inAll -->
+  <main>
+    <!-- banner -->
+    <section class="banner center">
+      <article class="hot1">
+        <p>
+          <a href="">NBA2KOL2</a>
+          <a href="">冒险岛2</a>
+          <a href="">火影忍者On...</a>
+          <a href="">NBA2LOL</a>
+          <a href="">地下城与勇士</a>
+          <a href="">CODOLC使命..</a>
+          <a href="">QQ三国</a>
+          <a href="">英雄联盟</a>
+        </p>
+        <p>
+          <a href="">穿越火线</a>
+          <a href="">剑灵</a>
+          <a href="">御龙在天</a>
+          <a href="">逆战</a>
+          <a href="">FIFA OL3</a>
+          <a href="">FIFA OL4</a>
+          <a href="">飞车</a>
+          <a href="">天涯明月刀</a>
+        </p>
+        <p>
+          <a href="">炫舞</a>
+        </p>
+      </article>
+      <article class="role1">
+        <p>
+          <a href="">上古世纪</a>
+          <a href="">冒险岛2</a>
+          <a href="">御龙在天经...</a>
+          <a href="">QQ幻想</a>
+          <a href="">斗战神</a>
+          <a href="">地下城与勇士</a>
+          <a href="">轩辕</a>
+          <a href="">天堂2</a>
+        </p>
+        <p>
+          <a href="">仙侠传</a>
+          <a href="">自由幻想</a>
+          <a href="">天堂</a>
+          <a href="">幻想三国</a>
+          <a href="">QQ三国</a>
+          <a href="">疾风之刃</a>
+          <a href="">刀剑2</a>
+          <a href="">剑灵</a>
+        </p>
+        <p>
+          <a href="">御龙在天</a>
+          <a href="">天涯明月刀</a>
+        </p>
+      </article>
+      <article class="athletics1">
+        <p>
+          <a href="">NBA2KOL2</a>
+          <a href="">极品飞车OL</a>
+          <a href="">战争雷霆</a>
+          <a href="">NBA2KOL</a>
+          <a href="">CODOL使命...</a>
+          <a href="">英雄联盟</a>
+          <a href="">穿越火线</a>
+          <a href="">枪神纪</a>
+        </p>
+        <p>
+          <a href="">逆战</a>
+          <a href="">FIFA OL3</a>
+          <a href="">FIFA OL4</a>
+          
+        </p>
+      </article>
+      <article class="relax1">
+        <p>
+          <a href="">炫舞时代</a>
+          <a href="">飞车</a>
+          <a href="">炫舞</a>
+        </p>
+      </article>
+      <article class="webpage1">
+        <p>
+          <a href="">捕鱼达人 3D</a>
+          <a href="">英魂之刃</a>
+          <a href="">火影忍者Onli...</a>
+          <a href="">部落守卫战(...</a>
+          <a href="">宠物大乐斗</a>
+          <a href="">烽火战国</a>
+        </p>
+      </article>
+      <ul>
+        <li><a href="" class="hot"><span class="iconfont">&#xe507;</span>热门游戏</a></li>
+        <li><a href="" class="role"><span class="iconfont">&#xe60b;</span>角色扮演</a></li>
+        <li><a href="" class="athletics"><span class="iconfont">&#xe61a;</span>竞技游戏</a></li>
+        <li><a href="" class="relax"><span class="iconfont">&#xe605;</span>休闲游戏</a></li>
+        <li><a href="" class="webpage"><span class="iconfont">&#xe62a;</span>网页游戏</a></li>
+      </ul>
+      <div class="bannerImgAll">
+        <aside>
+          <a  class="active" href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </aside>
+        <div class="bannerImg">
+          
+          <div class="bannerImg5">
+            <a href=""><img src="./images/index/ia_100000005.jpg" alt=""></a>
+            <span></span>
+            <p>CFPL冠军转盘</p>
+            
+          </div>
+          <div class="bannerImg2">
+            <a href=""><img src="./images/index/ia_100000002.jpg" alt=""></a>
+            <span></span>
+            <p>王者之武枪模</p>
+            
+          </div>
+          <div class="bannerImg3">
+            <a href=""><img src="./images/index/ia_100000003.jpg" alt=""></a>
+            <span></span>
+            <p>LPL出征鹅手办套装限定版</p>
+            
+          </div>
+          <div class="bannerImg4">
+            <a href=""><img src="./images/index/ia_100000004.jpg" alt=""></a>
+            <span></span>
+            <p>克伦特的呐喊</p>
+            
+          </div>
+          <div class="bannerImg5">
+            <a href=""><img src="./images/index/ia_100000005.jpg" alt=""></a>
+            <span></span>
+            <p>CFPL冠军转盘</p>
+            
+          </div>
+          <div class="bannerImg2">
+            <a href=""><img src="./images/index/ia_100000002.jpg" alt=""></a>
+            <span></span>
+            <p>王者之武枪模</p>
+            
+          </div>
+        </div>
+      </div>
+      <section>
+        <div>
+          <p>您还未登录哦，<a href="">立即登录</a>购买超值商品！</p>
+        </div>
+        <div>
+          <p>推荐游戏</p>
+          <ul class="rightUl">
+            <li>
+              <img src="./images/index/ia_100000008.jpg" alt="">
+              <a href="">穿越火线</a>
+            </li>
+            <li>
+              <img src="./images/index/ia_100000009.jpg" alt="">
+              <a href="">英雄联盟</a>
+            </li>
+            <li>
+              <img src="./images/index/ia_100000010.jpg" alt="">
+              <a href="">剑灵</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>公告</p>
+          <span>更多</span>
+          <a href="">英魂之刃聚豆商城内全部道具 09/02</a href="">
+          <a href="">逆战8周年！超值碎片礼包限 08/14</a href="">
+          <a href="">DNF日常及聚豆商城道具下架 07/30</a href="">
+          <a href="">《剑灵》【夏日狂欢价 冰爽大 07/01</a href="">
+        </div>
+      </section>
+    </section>
+
+    <!-- content1 -->
+    <section class="content1 center">
+      <div class="content1Div1">
+        <p>热卖推荐</p>
+        <span>每日惊喜</span>
+        <img src="./images/index/content101.png" alt="" class="content1img1">
+        <img src="./images/index/content102.png" alt="" class="content1img2">
+      </div>
+      <div class="content1Div2">
+        <ul>
+          <!-- <li>
+            <section>
+              <p>[英雄联盟]灵能特工 莎弥拉</p>
+              <p>QB价：<span>79.00QB</span></p>
+              <p>热卖推荐</p>
+              <a href="">立即抢购</a>
+            </section>
+            <a href="" class="img1"><img src="../images/index/ia_100000027.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]沙漠玫瑰 莎弥拉</p>
+              <p>QB价：<span>45.00QB</span></p>
+              <p>热卖推荐</p>
+              <a href="">立即抢购</a>
+            </section>
+            <a href="" class="img1"><img src="../images/index/ia_100000028.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]灵能特工 凯尔</p>
+              <p>QB价：<span>79.00QB</span></p>
+              <p>热卖推荐</p>
+              <a href="">立即抢购</a>
+            </section>
+            <a href="" class="img1"><img src="../images/index/ia_100000030.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]灵能特工 劫</p>
+              <p>QB价：<span>79.00QB</span></p>
+              <p>热卖推荐</p>
+              <a href="">立即抢购</a>
+            </section>
+            <a href="" class="img1"><img src="../images/index/ia_100000031.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]灵能特工 维克托</p>
+              <p>QB价：<span>79.00QB</span></p>
+              <p>热卖推荐</p>
+              <a href="">立即抢购</a>
+            </section>
+            <a href="" class="img1"><img src="../images/index/ia_100000032.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]灵能特工 派克</p>
+              <p>QB价：<span>79.00QB</span></p>
+              <p>热卖推荐</p>
+              <a href="">立即抢购</a>
+            </section>
+            <a href="" class="img1"><img src="../images/index/ia_100000033.jpg" alt=""></a>
+          </li> -->
+        </ul>
+        <img src="./images/index/content103.png" alt="">
+      </div>
+    </section>
+
+    <!-- content2 -->
+    <section class="content2 center">
+      <div class="content2Div1">
+        <p>猜你喜欢</p>
+        <span>每日签到</span>
+        <img src="./images/index/content201.png" alt="" class="content1img1">
+        <img src="./images/index/content201.png" alt="" class="content1img2">
+      </div>
+      <div class="content2Div2">
+        <ul>
+          <!-- <li>
+            <section>
+              <p>[英雄联盟]</p>
+              <p>地狱火 阿木木</p>
+              <aside>商城价：<span>69.00 QB</span></aside>
+            </section>
+            <a href=""><img src="../images/index/ia_100001384.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]</p>
+              <p>原计划 卡蜜尔</p>
+              <aside>商城价：<span>69.00 QB</span></aside>
+            </section>
+            <a href=""><img src="../images/index/ia_100001395.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]</p>
+              <p>灵能特工 凯尔 代号:</p>
+              <aside>商城价：<span>20.00 QB</span></aside>
+            </section>
+            <a href=""><img src="../images/index/ia_100001406.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]</p>
+              <p>灵能特工 劫</p>
+              <aside>商城价：<span>79.00 QB</span></aside>
+            </section>
+            <a href=""><img src="../images/index/ia_100000031.jpg" alt=""></a>
+          </li>
+          <li>
+            <section>
+              <p>[英雄联盟]</p>
+              <p>沙漠玫瑰莎弥拉礼包</p>
+              <aside>商城价：<span>79.00 QB</span></aside>
+            </section>
+            <a href=""><img src="../images/index/ia_100001428.jpg" alt=""></a>
+          </li> -->
+        </ul>
+        <div class="content2Div3"><a href=""></a></div>
+      </div>
+      
+    </section>
+
+
+    <!-- content3 -->
+    <section class="content3 center">
+      <div class="content3Div1">
+        <p>精彩活动</p>
+        <a href="">更多></a>
+        <img src="./images/index/content301.png" alt="" class="content1img1">
+      </div>
+      <div class="content3Div2">
+        <ul>
+          <!-- <li><a href=""><img src="../images/index/ia_100000019.jpg" alt=""></a></li>
+          <li><a href=""><img src="../images/index/ia_100000020.jpg" alt=""></a></li>
+          <li><a href=""><img src="../images/index/ia_100000021.jpg" alt=""></a></li>
+          <li><a href=""><img src="../images/index/ia_100000022.jpg" alt=""></a></li>
+          <li><a href=""><img src="../images/index/ia_100000023.jpg" alt=""></a></li>
+          <li><a href=""><img src="../images/index/ia_100000024.jpg" alt=""></a></li> -->
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- content4 -->
+    <section class="content4 center">
+      <div class="content4Div1">
+        <p>英雄联盟专区</p>
+        <a href="">更多></a>
+        <img src="./images/index/content401.png" alt="" class="content1img1">
+      </div>
+      <div class="content4Div2">
+        <ul>
+          <li>
+            <a href=""><img src="./images/index/ia_100000025.jpg" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content402.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content403.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content404.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content405.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li2">
+            <section>
+              <a href=""><img src="./images/index/content406.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content407.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content408.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content409.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content410.png" alt=""></a>
+            </section>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content411.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content412.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content413.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content414.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- content5 -->
+    <section class="content4 center">
+      <div class="content4Div1">
+        <p>穿越火线专区</p>
+        <a href="">更多></a>
+        <img src="./images/index/content401.png" alt="" class="content1img1">
+      </div>
+      <div class="content4Div2">
+        <ul>
+          <li>
+            <a href=""><img src="./images/index/ia_100000039.jpg" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content501.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content502.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content503.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content504.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li2">
+            <section>
+              <a href=""><img src="./images/index/content505.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content506.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content507.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content508.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content509.png" alt=""></a>
+            </section>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content510.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content511.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content512.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content513.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- content6 -->
+    <section class="content4 center">
+      <div class="content4Div1">
+        <p>剑灵专区</p>
+        <a href="">更多></a>
+        <img src="./images/index/content401.png" alt="" class="content1img1">
+      </div>
+      <div class="content4Div2">
+        <ul>
+          <li>
+            <a href=""><img src="./images/index/ia_100000053.jpg" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content601.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content602.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content603.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content604.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li2">
+            <section>
+              <a href=""><img src="./images/index/content605.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content606.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content607.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content608.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content609.png" alt=""></a>
+            </section>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content610.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content611.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content612.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content613.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- content7 -->
+    <section class="content4 center">
+      <div class="content4Div1">
+        <p>御龙在天专区</p>
+        <a href="">更多></a>
+        <img src="./images/index/content401.png" alt="" class="content1img1">
+      </div>
+      <div class="content4Div2">
+        <ul>
+          <li>
+            <a href=""><img src="./images/index/ia_100000067.jpg" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content701.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content702.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content703.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li1">
+            <a href=""><img src="./images/index/content704.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li2">
+            <section>
+              <a href=""><img src="./images/index/content705.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content706.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content707.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content708.png" alt=""></a>
+            </section>
+            <section>
+              <a href=""><img src="./images/index/content710.png" alt=""></a>
+            </section>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content711.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content712.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content713.png" alt=""></a>
+          </li>
+          <li class="content4Div2Li3">
+            <a href=""><img src="./images/index/content714.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- content8 -->
+    <section class="content8 center">
+      <div class="content8Div">
+        <a href=""><img src="./images/index/ia_100000081.jpg" alt=""></a>
+        <a href=""><img src="./images/index/ia_100000082.jpg" alt=""></a>
+        <a href=""><img src="./images/index/ia_100000083.jpg" alt=""></a>
+      </div>
+    </section>
+
+
+    <!-- fixButton -->
+    <section class="fixButton">
+      <a href="#fixButton" class="fixButtonDiv1">
+        <span>↑</span>
+        <aside>返回顶部</aside>
+      </a>
+      <a href="" class="fixButtonA">反馈</a>
+    </section>
+
+
+    <!-- foot -->
+    <footer class="foot">
+      <section class="footer1 center">
+        <img src="./images/index/foot01.png" class="footer1Img1" alt="" >
+        <img src="./images/index/foot02.png" class="footer1Img2" alt="" >
+        <img src="./images/index/foot03.png" class="footer1Img3" alt="" >
+        <img src="./images/index/foot04.png" class="footer1Img4" alt="" >
+        <div class="footer1Content center">
+          <ul>
+            <li>
+              <p><a href="">什么是道聚城</a></p>
+              <p><a href="">如何购买</a></p>
+              <p><a href="">如何赠送</a></p>
+              <p><a href="">如何获取聚豆</a></p>
+            </li>
+            <li>
+              <p><a href="">发货时间</a></p>
+              <p><a href="">如何领取</a></p>
+              <p><a href="">补发规则</a></p>
+              <p><a href="">Vip价定义</a></p>
+              <p><a href="">道具状态定义</a></p>
+            </li>
+            <li>
+              <p><a href="">支付方式</a></p>
+              <p><a href="">购物点支付</a></p>
+              <p><a href="">如何充值</a></p>
+            </li>
+            <li>
+              <p><a href="">腾讯官方在线客服</a></p>
+              <img src="./images/index/ia_100000169.png" alt="">
+            </li>
+            <li>
+              <a href=""><img src="./images/index/foot05.png" alt=""></a>
+              <a href=""><img src="./images/index/foot06.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer2 center">
+        <aside>
+          <ul>
+            <li><a href="">腾讯互动娱乐</a></li>
+            <li><a href="">服务条款</a></li>
+            <li><a href="">腾讯游戏隐私保护指引</a></li>
+            <li><a href="">腾讯游戏儿童隐私保护指引</a></li>
+            <li><a href="">广告服务</a></li>
+            <li><a href="">腾讯游戏招聘</a></li>
+            <li><a href="">腾讯游戏客服</a></li>
+            <li><a href="">游戏地图</a></li>
+            <li><a href="">成长守护平台</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">网站导航</a></li>
+          </ul>
+        </aside>
+        <p>COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+        <a href="" class="footA1">腾讯公司 版权所有</a>
+      </section>
+      
+    </footer>
+    
+
+  </main>
+</body>
+</html>
